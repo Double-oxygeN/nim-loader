@@ -21,5 +21,12 @@
   "scripts": {
     "build": "babel loader.js --out-dir dist",
     "prepublish": "npm run build"
-  }
+  },
+  "keywords": [
+    "nim",
+    "webpack",
+    "loader",
+    "webpack-loader",
+    "front end"
+  ]
 }
