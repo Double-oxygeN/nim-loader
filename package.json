@@ -1,0 +1,25 @@
+{
+  "name": "nim-loader",
+  "version": "0.1.0",
+  "description": "A Webpack loader for the Nim language",
+  "main": "dist/loader.js",
+  "author": {
+    "name": "Braeden Mollot",
+    "email": "3mollot@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bmollot/nim-loader.git"
+  },
+  "homepage": "https://github.com/bmollot/nim-loader",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "loader-utils": "^1.1.0"
+  },
+  "scripts": {
+    "build": "babel loader.js --out-dir dist",
+    "prepublish": "npm run build"
+  }
+}
