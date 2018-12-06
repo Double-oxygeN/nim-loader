@@ -1,17 +1,12 @@
 import path from 'path'
-import loaderUtils from 'loader-utils'
+import { getOptions } from 'loader-utils'
 import { execSync } from 'child_process'
 import fs from 'fs'
-
-const moduleWrapper = `
-\n
-export default (typeof exports !== typeof undefined ? exports : {})
-`
 
 export default function(source) {
   this.addDependency('nim')
   
-  const opts = loaderUtils.getOptions(this) || {}
+  const opts = getOptions(this) || {}
   const callback = this.async()
   
   const nimFile = this.resourcePath
@@ -27,6 +22,6 @@ export default function(source) {
 
   fs.readFile(outFile, 'utf-8', function(err, jsSource) {
     if(err) return callback(err)
-    callback(null, jsSource /* + moduleWrapper */)
+    callback(null, jsSource)
   })
 }
