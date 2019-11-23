@@ -11,7 +11,7 @@ export default function(source) {
   
   const nimFile = this.resourcePath
   const srcDir = path.dirname(nimFile)
-  const outDir = path.resolve(srcDir, 'nimcache')
+  const outDir = path.resolve(srcDir)
   const outFile = path.resolve(outDir, path.basename(nimFile, '.nim')) + '.js'
   const flags = opts.flags || []
 
