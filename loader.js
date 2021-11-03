@@ -2,6 +2,7 @@ import path from 'path'
 import { getOptions } from 'loader-utils'
 import { execSync } from 'child_process'
 import fs from 'fs'
+import tempy from 'tempy'
 
 export default function(source) {
   this.addDependency('nim')
@@ -11,11 +12,10 @@ export default function(source) {
   
   const nimFile = this.resourcePath
   const srcDir = path.dirname(nimFile)
-  const outDir = path.resolve(srcDir)
-  const outFile = path.resolve(outDir, path.basename(nimFile, '.nim')) + '.js'
+  const outFile = tempy.file({ extension: 'js' })
   const flags = opts.flags || []
 
-  const cmd = ['nim', 'js', ...flags, nimFile].join(' ')
+  const cmd = ['nim', 'js', `-o:${outFile}`, ...flags, nimFile].join(' ')
   const res = execSync(cmd)
 
   console.log(res)
