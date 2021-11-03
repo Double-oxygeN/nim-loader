@@ -30,6 +30,6 @@
     "front end"
   ],
   "dependencies": {
-    "tempy": "^2.0.0"
+    "tempy": "^1.0.1"
   }
 }

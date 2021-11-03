@@ -826,12 +826,10 @@
   "resolved" "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz"
   "version" "1.0.2"
 
-"crypto-random-string@^4.0.0":
-  "integrity" "sha512-x8dy3RnvYdlUcPOjkEHqozhiwzKNSq7GcPuXFbnyMOCHxX8V3OgIg/pYuabl2sbUPfIJaeAQB7PMOK8DFIdoRA=="
-  "resolved" "https://registry.npmjs.org/crypto-random-string/-/crypto-random-string-4.0.0.tgz"
-  "version" "4.0.0"
-  dependencies:
-    "type-fest" "^1.0.1"
+"crypto-random-string@^2.0.0":
+  "integrity" "sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA=="
+  "resolved" "https://registry.npmjs.org/crypto-random-string/-/crypto-random-string-2.0.0.tgz"
+  "version" "2.0.0"
 
 "debug@^2.2.0", "debug@^2.3.3", "debug@^2.6.8", "debug@^2.6.9":
   "integrity" "sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA=="
@@ -1359,10 +1357,10 @@
   "resolved" "https://registry.npmjs.org/is-primitive/-/is-primitive-2.0.0.tgz"
   "version" "2.0.0"
 
-"is-stream@^3.0.0":
-  "integrity" "sha512-LnQR4bZ9IADDRSkvpqMGvt/tEJWclzklNgSw48V5EAaAeDd6qGvN8ei6k5p0tvxSR171VmGyHuTiAOfxAbr8kA=="
-  "resolved" "https://registry.npmjs.org/is-stream/-/is-stream-3.0.0.tgz"
-  "version" "3.0.0"
+"is-stream@^2.0.0":
+  "integrity" "sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg=="
+  "resolved" "https://registry.npmjs.org/is-stream/-/is-stream-2.0.1.tgz"
+  "version" "2.0.1"
 
 "is-windows@^1.0.2":
   "integrity" "sha512-eXK1UInq2bPmjyX6e3VHIzMLobc4J94i4AWn+Hpq3OU5KkrRC96OAcR3PRJ/pGu6m8TRnBHP9dkXQVsT/COVIA=="
@@ -2002,16 +2000,16 @@
   "resolved" "https://registry.npmjs.org/temp-dir/-/temp-dir-2.0.0.tgz"
   "version" "2.0.0"
 
-"tempy@^2.0.0":
-  "integrity" "sha512-m+QReZVhpa0Y56fmfoLFRZN4aDFdd3qVd8a9k3RfyTw/1utVYNg+Ar4BY6l4/TlkhYCCJFfhYWt9uy0127buJg=="
-  "resolved" "https://registry.npmjs.org/tempy/-/tempy-2.0.0.tgz"
-  "version" "2.0.0"
+"tempy@^1.0.1":
+  "integrity" "sha512-biM9brNqxSc04Ee71hzFbryD11nX7VPhQQY32AdDmjFvodsRFz/3ufeoTZ6uYkRFfGo188tENcASNs3vTdsM0w=="
+  "resolved" "https://registry.npmjs.org/tempy/-/tempy-1.0.1.tgz"
+  "version" "1.0.1"
   dependencies:
     "del" "^6.0.0"
-    "is-stream" "^3.0.0"
+    "is-stream" "^2.0.0"
     "temp-dir" "^2.0.0"
-    "type-fest" "^2.0.0"
-    "unique-string" "^3.0.0"
+    "type-fest" "^0.16.0"
+    "unique-string" "^2.0.0"
 
 "to-fast-properties@^1.0.3":
   "integrity" "sha1-uDVx+k2MJbguIxsG46MFXeTKGkc="
@@ -2055,15 +2053,10 @@
   "resolved" "https://registry.npmjs.org/trim-right/-/trim-right-1.0.1.tgz"
   "version" "1.0.1"
 
-"type-fest@^1.0.1":
-  "integrity" "sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA=="
-  "resolved" "https://registry.npmjs.org/type-fest/-/type-fest-1.4.0.tgz"
-  "version" "1.4.0"
-
-"type-fest@^2.0.0":
-  "integrity" "sha512-WMbytmAs5PUTqwGJRE+WoRrD2S0bYFtHX8k4Y/1l18CG5kqA3keJud9pPQ/r30FE9n8XRFCXF9BbccHIZzRYJw=="
-  "resolved" "https://registry.npmjs.org/type-fest/-/type-fest-2.5.2.tgz"
-  "version" "2.5.2"
+"type-fest@^0.16.0":
+  "integrity" "sha512-eaBzG6MxNzEn9kiwvtre90cXaNLkmadMWa1zQMs3XORCXNbsH/OewwbxC5ia9dCxIxnTAsSxXJaa/p5y8DlvJg=="
+  "resolved" "https://registry.npmjs.org/type-fest/-/type-fest-0.16.0.tgz"
+  "version" "0.16.0"
 
 "union-value@^1.0.0":
   "integrity" "sha512-tJfXmxMeWYnczCVs7XAEvIV7ieppALdyepWMkHkwciRpZraG/xwT+s2JN8+pr1+8jCRf80FFzvr+MpQeeoF4Xg=="
@@ -2075,12 +2068,12 @@
     "is-extendable" "^0.1.1"
     "set-value" "^2.0.1"
 
-"unique-string@^3.0.0":
-  "integrity" "sha512-VGXBUVwxKMBUznyffQweQABPRRW1vHZAbadFZud4pLFAqRGvv/96vafgjWFqzourzr8YonlQiPgH0YCJfawoGQ=="
-  "resolved" "https://registry.npmjs.org/unique-string/-/unique-string-3.0.0.tgz"
-  "version" "3.0.0"
+"unique-string@^2.0.0":
+  "integrity" "sha512-uNaeirEPvpZWSgzwsPGtU2zVSTrn/8L5q/IexZmH0eH6SA73CmAA5U4GwORTxQAZs95TAXLNqeLoPPNO5gZfWg=="
+  "resolved" "https://registry.npmjs.org/unique-string/-/unique-string-2.0.0.tgz"
+  "version" "2.0.0"
   dependencies:
-    "crypto-random-string" "^4.0.0"
+    "crypto-random-string" "^2.0.0"
 
 "unset-value@^1.0.0":
   "integrity" "sha1-g3aHP30jNRef+x5vw6jtDfyKtVk="
