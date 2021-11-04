@@ -5,10 +5,10 @@ import tempy from 'tempy'
 
 export default function(source) {
   this.addDependency('nim')
-  
+
   const opts = getOptions(this) || {}
   const callback = this.async()
-  
+
   const nimFile = this.resourcePath
   const outFile = tempy.file({ extension: 'js' })
   const flags = opts.flags || []
