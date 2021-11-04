@@ -28,5 +28,8 @@
     "loader",
     "webpack-loader",
     "front end"
-  ]
+  ],
+  "dependencies": {
+    "tempy": "^1.0.1"
+  }
 }
