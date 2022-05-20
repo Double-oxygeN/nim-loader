@@ -1,17 +1,29 @@
-import { getOptions } from 'loader-utils'
+import { validate } from 'schema-utils'
 import { execSync } from 'child_process'
 import fs from 'fs'
 import tempy from 'tempy'
 
-export default function(source) {
-  this.addDependency('nim')
+const optionsSchema = {
+  type: 'object',
+  properties: {
+    flags: {
+      type: 'array',
+      items: {
+        type: 'string'
+      }
+    }
+  }
+}
 
-  const opts = getOptions(this) || {}
+export default function(source) {
+  const opts = this.getOptions()
+  validate(optionsSchema, opts)
   const callback = this.async()
 
-  const nimFile = this.resourcePath
-  const outFile = tempy.file({ extension: 'js' })
   const flags = opts.flags || []
+  const nimFile = this.resourcePath
+  this.addDependency(nimFile)
+  const outFile = tempy.file({ extension: 'js' })
 
   const cmd = ['nim', 'js', `-o:${outFile}`, ...flags, nimFile].join(' ')
   const res = execSync(cmd)
