@@ -30,6 +30,6 @@
   ],
   "dependencies": {
     "schema-utils": "^4.0.0",
-    "tempy": "^2.0.0"
+    "tempy": "^1.0.1"
   }
 }
