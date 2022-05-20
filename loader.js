@@ -4,12 +4,11 @@ import fs from 'fs'
 import tempy from 'tempy'
 
 export default function(source) {
-  this.addDependency('nim')
-
   const opts = getOptions(this) || {}
   const callback = this.async()
 
   const nimFile = this.resourcePath
+  this.addDependency(nimFile)
   const outFile = tempy.file({ extension: 'js' })
   const flags = opts.flags || []
 
